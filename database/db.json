@@ -1,0 +1,14 @@
+{
+  "movies":[
+    {
+      "id":1,
+      "name":"the boys",
+      "genre":"superhero"
+    },
+    {
+      "id":2,
+      "name":"avenger",
+      "genre":"slice of life"
+    }
+  ]
+}
