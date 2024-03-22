@@ -1,14 +1,21 @@
 {
-  "movies":[
+  "patients":[
     {
       "id":1,
-      "name":"the boys",
-      "genre":"superhero"
+      "name":"rudi hartono",
+      "sex":"male",
+      "religion":"muslim",
+      "address":"subang",
+      "nik":"23423522343424"
     },
     {
       "id":2,
-      "name":"avenger",
-      "genre":"slice of life"
+      "name":"yono",
+      "sex":"male",
+      "religion":"muslim",
+      "address":"majalengka",
+      "nik":"2342424234987"
     }
+    
   ]
 }
