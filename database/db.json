@@ -17,98 +17,10 @@
       "nik": "2342424234987"
     },
     {
-      "id": "3d72",
-      "name": "hanni"
-    },
-    {
-      "id": "9393",
-      "name": {
-        "__v_isShallow": false,
-        "dep": {},
-        "__v_isRef": true,
-        "_rawValue": "irfan yazid",
-        "_value": "irfan yazid"
-      },
-      "sex": {
-        "__v_isShallow": false,
-        "dep": {},
-        "__v_isRef": true,
-        "_rawValue": "male",
-        "_value": "male"
-      },
-      "religion": {
-        "__v_isShallow": false,
-        "dep": {},
-        "__v_isRef": true,
-        "_rawValue": "Hindu",
-        "_value": "Hindu"
-      },
-      "phone": {
-        "__v_isShallow": false,
-        "dep": {},
-        "__v_isRef": true,
-        "_rawValue": "089680810704",
-        "_value": "089680810704"
-      },
-      "address": {
-        "__v_isShallow": false,
-        "dep": {},
-        "__v_isRef": true,
-        "_rawValue": "perumdam trenggilis BA 29 kecamatan Blooto Kelurahan Prajurit Kulon, Perumahan Blooto",
-        "_value": "perumdam trenggilis BA 29 kecamatan Blooto Kelurahan Prajurit Kulon, Perumahan Blooto"
-      }
-    },
-    {
-      "id": "89dc",
-      "name": {
-        "__v_isShallow": false,
-        "dep": {},
-        "__v_isRef": true,
-        "_rawValue": "asd",
-        "_value": "asd"
-      },
-      "sex": {
-        "__v_isShallow": false,
-        "dep": {},
-        "__v_isRef": true,
-        "_rawValue": "male",
-        "_value": "male"
-      },
-      "religion": {
-        "__v_isShallow": false,
-        "dep": {},
-        "__v_isRef": true,
-        "_rawValue": "Katolik",
-        "_value": "Katolik"
-      },
-      "phone": {
-        "__v_isShallow": false,
-        "dep": {},
-        "__v_isRef": true,
-        "_rawValue": "089680810704",
-        "_value": "089680810704"
-      },
-      "address": {
-        "__v_isShallow": false,
-        "dep": {},
-        "__v_isRef": true,
-        "_rawValue": "perumdam trenggilis BA 29 kecamatan Blooto Kelurahan Prajurit Kulon, Perumahan Blooto",
-        "_value": "perumdam trenggilis BA 29 kecamatan Blooto Kelurahan Prajurit Kulon, Perumahan Blooto"
-      }
-    },
-    {
       "id": "44ae",
       "name": "irfan yazid",
       "sex": "male",
       "religion": "Katolik",
-      "phone": "089680810704",
-      "address": "perumdam trenggilis BA 29 kecamatan Blooto Kelurahan Prajurit Kulon, Perumahan Blooto"
-    },
-    {
-      "id": "ab8f",
-      "name": "irfan yazid",
-      "sex": "male",
-      "religion": "Kristen",
       "phone": "089680810704",
       "address": "perumdam trenggilis BA 29 kecamatan Blooto Kelurahan Prajurit Kulon, Perumahan Blooto"
     }

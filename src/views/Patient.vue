@@ -35,6 +35,7 @@ function toggleModal() {
 }
 
 function insertPatient() {
+  toggleModal()
   axios.post('http://localhost:3000/patients', {
     name: name.value,
     sex: sex.value,
@@ -42,6 +43,10 @@ function insertPatient() {
     phone: phone.value,
     address:address.value
   })
+}
+
+function deletePatient(param) {
+ axios.delete(`http://localhost:3000/patients/${param}`)
 }
 
 </script>
@@ -88,6 +93,11 @@ function insertPatient() {
               class="font-medium text-blue-600 dark:text-blue-500 hover:underline ml-5"
               >detail</a
             >
+            <a
+              href="#"
+              class="font-medium text-blue-600 dark:text-blue-500 hover:underline ml-5" @click="deletePatient(patient.id)"
+              >delete</a
+            >
           </td>
         </tr>
       </tbody>
@@ -102,7 +112,7 @@ function insertPatient() {
 </button>
 
 <!-- Main modal -->
-<div id="default-modal" :class="{ 'hidden': hiddenModal }">
+<div id="default-modal" :class="{ 'hidden': hiddenModal }" class="mb-5">
     <div class="relative mt-5">
         <!-- Modal content -->
         <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
@@ -166,4 +176,3 @@ function insertPatient() {
 
 </template>
 
-<script setup></script>
