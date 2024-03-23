@@ -1,26 +1,25 @@
 {
   "patients": [
     {
-      "id": "1",
-      "name": "rudi hartono",
+      "name": "rudi hartono subandi",
       "sex": "male",
-      "religion": "muslim",
+      "religion": "islam",
+      "phone": "234235345",
       "address": "subang",
-      "nik": "23423522343424"
+      "id": "1"
     },
     {
-      "id": "2",
-      "name": "yono",
+      "name": "yonos",
       "sex": "male",
-      "religion": "muslim",
+      "religion": "islam",
       "address": "majalengka",
-      "nik": "2342424234987"
+      "id": "2"
     },
     {
       "id": "44ae",
       "name": "irfan yazid",
       "sex": "male",
-      "religion": "Katolik",
+      "religion": "katolik",
       "phone": "089680810704",
       "address": "perumdam trenggilis BA 29 kecamatan Blooto Kelurahan Prajurit Kulon, Perumahan Blooto"
     }
