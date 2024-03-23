@@ -1,102 +1,11 @@
 <script setup>
-import { ref, onMounted,watch } from 'vue'
-import axios from 'axios';
-
-const patients = ref([])
-const hiddenModal = ref(true)
-
-const name = ref("")
-const sex = ref("")
-const religion = ref("")
-const phone = ref("")
-const address = ref("")
-
-const fetchData = () => {
-  fetch('http://localhost:3000/patients')
-  .then((response)=>response.json())
-  .then(patientsApi => {
-    patients.value = patientsApi
-  })
+export default {
+  
 }
-
-onMounted(() => {
-  fetchData()
-})
-
-watch(patients, () => {
-  fetchData()
-})
-
-
-
-
-function toggleModal() {
-   hiddenModal.value = !hiddenModal.value
-}
-
-function insertPatient() {
-  axios.post('http://localhost:3000/patients', {
-    name: name.value,
-    sex: sex.value,
-    religion: religion.value,
-    phone: phone.value,
-    address:address.value
-  })
-}
-
 </script>
 
-
 <template>
-  <div class="flex justify-center items-center">
-  <button class="text-white bg-gradient-to-r from-pink-400 via-pink-500 to-pink-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-pink-300 dark:focus:ring-pink-800 font-medium rounded-lg text-xl px-5 py-2.5 text-center me-2 mb-2 mt-2 h-12">Patient</button>
-</div>
-  <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-    <table
-      class="w-full text-sm text-center  text-gray-500 dark:text-gray-400"
-    >
-      <thead
-        class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400"
-      >
-        <tr>
-          <th scope="col" class="px-6 py-3">No</th>
-          <th scope="col" class="px-6 py-3">Name</th>
-          <th scope="col" class="px-6 py-3">Address</th>
-          <th scope="col" class="px-6 py-3">Action</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr
-          class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700" v-for="patient in patients" :key="patient.id" :patient="patient"
-        >
-          <th
-            scope="row"
-            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white"
-          >
-            {{ patient.id }}
-          </th>
-          <td class="px-6 py-4"> {{ patient.name }}</td>
-          <td class="px-6 py-4"> {{ patient.address }}</td>
-          <td class="px-6 py-4">
-            <a
-              href="#"
-              class="font-medium text-blue-600 dark:text-blue-500 hover:underline"
-              >Edit</a
-            >
-            <a
-              href="#"
-              class="font-medium text-blue-600 dark:text-blue-500 hover:underline ml-5"
-              >detail</a
-            >
-          </td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-
-
-
-<!-- Modal toggle -->
+    <!-- Modal toggle -->
 <button data-modal-target="default-modal" data-modal-toggle="default-modal" class="text-gray-900 bg-gradient-to-r from-lime-200 via-lime-400 to-lime-500 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-lime-300 dark:focus:ring-lime-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mt-3" type="button" @click="toggleModal">
   Insert Patient
 </button>
@@ -157,13 +66,9 @@ function insertPatient() {
 
             <!-- Modal footer -->
             <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
-                <button data-modal-hide="default-modal" type="button" class="bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2" @click="insertPatient">Submit</button>
+                <button data-modal-hide="default-modal" type="button" class="bg-gradient-to-r from-teal-400 via-teal-500 to-teal-600 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-teal-300 dark:focus:ring-teal-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2">Submit</button>
             </div>
         </div>
     </div>
 </div>
-
-
 </template>
-
-<script setup></script>
